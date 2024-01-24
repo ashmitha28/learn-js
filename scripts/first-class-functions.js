@@ -1,4 +1,4 @@
-function foo(sum, x, y) {
+ function foo(sum, x, y) {
  return sum(x,y);
 }
 
