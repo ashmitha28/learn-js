@@ -1,8 +1,9 @@
+this.firstName ='Alan'
 const person = {
  firstName: 'Grace',
  lastName: 'Hopper',
  age: 89,
- fullName: () => { return this.firstName + ' ' + this.lastName }
+ fullName: () => { return person.firstName + ' ' + person.lastName }
 }
 
 let x = person.fullName();
