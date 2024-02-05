@@ -1,8 +1,7 @@
 class PStack {
   #id;
   constructor() {
-    this.#id = 1;
-    this.persons = [];
+    this.#id = Math.floor(Math.random() * 100) + 1;
   }
 
   showId() {
@@ -10,10 +9,17 @@ class PStack {
     return this.#id;
   }
 
+  push(p) {
+    // implement in child class
+  }
+
+  pop() {
+    // implement in child class
+  }
+
 }
 
 class PStackImpl extends PStack {
-  #persons=[]
   constructor() {
     super();
   }
@@ -38,4 +44,4 @@ pstack.push({name: 'Dein', age: 19});
 console.log(pstack.pop());
 console.log(pstack.pop());
 console.log(pstack.show());
-console.log(pstack.showId);
+console.log(pstack.persons);
